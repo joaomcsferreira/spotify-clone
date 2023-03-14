@@ -3,6 +3,17 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'GothamBook';
-  src: url('./assets/fonts/GothamBook.ttf');
+  font-family: "Gotham";
+  font-weight: 500;
+  src: url("./assets/fonts/GothamBook.ttf");
+}
+
+@layer components {
+  .title {
+    @apply text-xl font-bold;
+  }
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }

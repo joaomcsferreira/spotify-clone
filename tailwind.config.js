@@ -2,11 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {
-      fontFamily: {
-        gotham: ["GothamBook", "sans-serif"],
-      },
+    fontFamily: {
+      circular: ["Gotham", "sans-serif"],
+    },
 
+    extend: {
       gridTemplateColumns: {
         web: "241px 1fr",
       },
