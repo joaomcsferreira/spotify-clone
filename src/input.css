@@ -12,6 +12,25 @@
   .title {
     @apply text-xl font-bold;
   }
+
+  .action-title {
+    @apply text-sm font-bold text-zinc-500 cursor-pointer;
+  }
+
+  .action-title:hover {
+    @apply text-white;
+  }
+
+  .playlist-title {
+    @apply text-zinc-500 text-sm font-bold mb-3 cursor-pointer;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .playlist-title:hover {
+    @apply text-zinc-300;
+  }
 }
 
 *::-webkit-scrollbar {

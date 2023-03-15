@@ -13,6 +13,7 @@ module.exports = {
 
       gridTemplateRows: {
         web: "64px calc(100vh - 96px - 64px) 96px",
+        sidemenu: "auto auto",
       },
 
       colors: {
