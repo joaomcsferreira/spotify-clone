@@ -10,7 +10,7 @@
 
 @layer components {
   .title {
-    @apply text-xl font-bold;
+    @apply text-xl font-bold md:text-3xl;
   }
 
   .action-title {
@@ -30,6 +30,49 @@
 
   .playlist-title:hover {
     @apply text-zinc-300;
+  }
+
+  .card {
+    @apply w-full h-14 sm:h-20 bg-white/10 overflow-hidden flex rounded gap-4 cursor-pointer;
+  }
+
+  .card:hover {
+    @apply bg-white/30;
+  }
+
+  .card-title {
+    @apply self-center font-bold text-[0.7rem] w-2/4 sm:text-[0.9rem];
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .card-stacked {
+    @apply shrink-0 grow-0 h-full w-8/12 bg-crow p-4 flex flex-col gap-2 rounded-md cursor-pointer md:w-48 md:h-[270px];
+  }
+
+  .card-stacked:hover {
+    @apply bg-zinc-800;
+  }
+
+  .card-stacked-title {
+    @apply font-bold;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
+  .card-stacked-description {
+    @apply text-zinc-400 text-xs font-semibold;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
   }
 }
 
