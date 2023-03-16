@@ -15,7 +15,7 @@
     >
       <!-- HEADER -->
       <header
-        class="bg-ebony p-2 col-start-1 col-span-2 grid grid-cols-3 items-center justify-between md:bg-midnightBlue md:col-start-2 md:px-8"
+        class="bg-ebony p-4 col-start-1 col-span-2 grid grid-cols-3 items-center justify-between sm:bg-midnightBlue md:col-start-2 md:px-8"
       >
         <!-- MOBILE VERSION -->
         <h1 class="title col-span-2 md:hidden">Good afternoon</h1>
@@ -47,7 +47,9 @@
 
         <!-- WEB VERSION -->
         <div class="col-span-2 hidden md:flex gap-4">
-          <div class="w-8 h-8 bg-black/50 rounded-full flex justify-center p-2">
+          <div
+            class="w-8 h-8 bg-black/50 rounded-full flex justify-center p-2 cursor-not-allowed"
+          >
             <svg class="w-full fill-white" viewBox="0 0 16 16">
               <path
                 d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0z"
@@ -55,7 +57,9 @@
             </svg>
           </div>
 
-          <div class="w-8 h-8 bg-black/50 rounded-full flex justify-center p-2">
+          <div
+            class="w-8 h-8 bg-black/50 rounded-full flex justify-center p-2 cursor-not-allowed"
+          >
             <svg class="w-full fill-white" viewBox="0 0 16 16">
               <path
                 d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z"
@@ -64,7 +68,7 @@
           </div>
         </div>
         <div
-          class="hidden justify-self-end md:flex w-fit h-8 p-0.5 bg-black/70 rounded-full gap-3"
+          class="hidden justify-self-end md:flex w-fit h-8 p-0.5 bg-black/70 rounded-full gap-3 hover:bg-zinc-700 cursor-pointer"
         >
           <img
             class="rounded-full"
@@ -101,31 +105,35 @@
               <p class="action-title text-white">Home</p>
             </div>
 
-            <div class="flex items-center gap-4">
-              <svg class="fill-white w-6" viewBox="0 0 24 24">
+            <div class="group flex items-center gap-4 cursor-pointer">
+              <svg
+                class="fill-zinc-500 w-6 group-hover:fill-white"
+                viewBox="0 0 24 24"
+              >
                 <path
                   d="M10.533 1.279c-5.18 0-9.407 4.14-9.407 9.279s4.226 9.279 9.407 9.279c2.234 0 4.29-.77 5.907-2.058l4.353 4.353a1 1 0 1 0 1.414-1.414l-4.344-4.344a9.157 9.157 0 0 0 2.077-5.816c0-5.14-4.226-9.28-9.407-9.28zm-7.407 9.279c0-4.006 3.302-7.28 7.407-7.28s7.407 3.274 7.407 7.28-3.302 7.279-7.407 7.279-7.407-3.273-7.407-7.28z"
-                  fill-opacity="0.698"
                 ></path>
               </svg>
-              <p class="action-title">Search</p>
+              <p class="action-title group-hover:text-white">Search</p>
             </div>
 
-            <div class="flex items-center gap-4">
-              <svg class="fill-white w-6" viewBox="0 0 24 24">
+            <div class="group flex items-center gap-4 cursor-pointer">
+              <svg
+                class="fill-zinc-500 w-6 group-hover:fill-white"
+                viewBox="0 0 24 24"
+              >
                 <path
                   d="M14.5 2.134a1 1 0 0 1 1 0l6 3.464a1 1 0 0 1 .5.866V21a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1V3a1 1 0 0 1 .5-.866zM16 4.732V20h4V7.041l-4-2.309zM3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zm6 0a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1z"
-                  fill-opacity="0.698"
                 ></path>
               </svg>
-              <p class="action-title">Your Library</p>
+              <p class="action-title group-hover:text-white">Your Library</p>
             </div>
           </div>
 
           <div class="flex flex-col gap-4">
-            <div class="flex items-center gap-4">
+            <div class="group flex items-center gap-4 cursor-pointer">
               <div
-                class="w-6 h-6 rounded-sm bg-gray-400 flex justify-center items-center"
+                class="w-6 h-6 rounded-sm bg-gray-400 group-hover:bg-white flex justify-center items-center"
               >
                 <svg class="fill-gray-700 w-3 h-3" viewBox="0 0 16 16">
                   <path
@@ -133,33 +141,36 @@
                   ></path>
                 </svg>
               </div>
-              <p class="action-title">Create Playlist</p>
+              <p class="action-title group-hover:text-white">Create Playlist</p>
             </div>
 
-            <div class="flex items-center gap-4">
+            <div class="group flex items-center gap-4 cursor-pointer">
               <div
-                class="w-6 h-6 rounded-sm bg-gradient-to-br from-darkSlateBlue to-silver flex justify-center items-center"
+                class="w-6 h-6 rounded-sm bg-gradient-to-br from-darkSlateBlue to-silver group-hover:from-darkSlateBlueHover group-hover:to-zinc-200 flex justify-center items-center"
               >
-                <svg class="fill-gray-300 w-3 h-3" viewBox="0 0 16 16">
+                <svg
+                  class="fill-gray-300 w-3 h-3 group-hover:fill-white"
+                  viewBox="0 0 16 16"
+                >
                   <path
                     d="M15.724 4.22A4.313 4.313 0 0 0 12.192.814a4.269 4.269 0 0 0-3.622 1.13.837.837 0 0 1-1.14 0 4.272 4.272 0 0 0-6.21 5.855l5.916 7.05a1.128 1.128 0 0 0 1.727 0l5.916-7.05a4.228 4.228 0 0 0 .945-3.577z"
                   ></path>
                 </svg>
               </div>
-              <p class="action-title">Liked Songs</p>
+              <p class="action-title group-hover:text-white">Liked Songs</p>
             </div>
 
-            <div class="flex items-center gap-4">
+            <div class="group flex items-center gap-4 cursor-pointer">
               <div
-                class="w-6 h-6 rounded-sm bg-forestGreen flex justify-center items-center"
+                class="w-6 h-6 rounded-sm bg-forestGreen group-hover:bg-forestGreenHover flex justify-center items-center"
               >
-                <svg class="fill-green w-4 h-4">
+                <svg class="fill-green w-4 h-4 group-hover:fill-springGreen">
                   <path
                     d="M3.75 0A1.75 1.75 0 0 0 2 1.75v12.952c0 1.051 1.22 1.633 2.037.972l3.962-3.208 3.943 3.204c.817.663 2.038.082 2.038-.97V1.75A1.75 1.75 0 0 0 12.23 0H3.75z"
                   ></path>
                 </svg>
               </div>
-              <p class="action-title">Your Episodes</p>
+              <p class="action-title group-hover:text-white">Your Episodes</p>
             </div>
           </div>
         </div>
@@ -194,8 +205,10 @@
         class="bg-ebony sm:bg-gradient-to-b from-midnightBlue via-ebony to-ebony overflow-auto flex flex-col gap-6 p-4 md:px-8 py-5"
       >
         <h2 class="title hidden md:block">Good Morning</h2>
-        <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-5">
-          <div class="card">
+        <div
+          class="grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-x-6 md:gap-y-3"
+        >
+          <div class="group card">
             <img
               src="assets/images/ab67616d00001e0215784f5212050cf2e67f1935ab67616d00001e027a9bf5f82e32d33d4503fe7bab67616d00001e029e2f95ae77cf436017ada9cbab67616d00001e02c9fec49c8930fb10e4756dfe.jfif"
               alt=""
@@ -203,29 +216,65 @@
             <p class="card-title">
               Musicas que são cinematográficas na minha cabeça.
             </p>
+            <div
+              class="w-12 h-12 opacity-0 self-center rounded-full flex justify-center bg-springGreen group-hover:opacity-100 hover:scale-110 cursor-pointer"
+            >
+              <svg class="fill-black w-4" viewBox="0 0 16 16">
+                <path
+                  d="M3 1.713a.7.7 0 0 1 1.05-.607l10.89 6.288a.7.7 0 0 1 0 1.212L4.05 14.894A.7.7 0 0 1 3 14.288V1.713z"
+                ></path>
+              </svg>
+            </div>
           </div>
-          <div class="card">
+          <div class="group card">
             <img
               src="assets/images/ab67616d00001e025411161216eb9703a143d819ab67616d00001e0261679c510bdead16f7edfe8aab67616d00001e02a604abe09c3f7069dc51f85eab67616d00001e02b6754f3738e5e5faac6b22a8.jfif"
               alt=""
             />
             <p class="card-title">Proibido escutar em setembro amarelo.</p>
+            <div
+              class="w-12 h-12 opacity-0 self-center rounded-full flex justify-center bg-springGreen group-hover:opacity-100 hover:scale-110 cursor-pointer"
+            >
+              <svg class="fill-black w-4" viewBox="0 0 16 16">
+                <path
+                  d="M3 1.713a.7.7 0 0 1 1.05-.607l10.89 6.288a.7.7 0 0 1 0 1.212L4.05 14.894A.7.7 0 0 1 3 14.288V1.713z"
+                ></path>
+              </svg>
+            </div>
           </div>
-          <div class="card">
+          <div class="group card">
             <img
               src="assets/images/ab67616d00001e0220ee3e86e17f17239bef1f76ab67616d00001e025284333459b08de72e2bda0dab67616d00001e028d1570a03b9354518f0b618bab67616d00001e02d0ccf94a2d981db731f5dab8.jfif"
               alt=""
             />
             <p class="card-title">Mais suave que suavinho.</p>
+            <div
+              class="w-12 h-12 opacity-0 self-center rounded-full flex justify-center bg-springGreen group-hover:opacity-100 hover:scale-110 cursor-pointer"
+            >
+              <svg class="fill-black w-4" viewBox="0 0 16 16">
+                <path
+                  d="M3 1.713a.7.7 0 0 1 1.05-.607l10.89 6.288a.7.7 0 0 1 0 1.212L4.05 14.894A.7.7 0 0 1 3 14.288V1.713z"
+                ></path>
+              </svg>
+            </div>
           </div>
-          <div class="card">
+          <div class="group card">
             <img
               src="assets/images/ab67616d00001e022b4da5abb231f0dfc297ff09ab67616d00001e022ef73259916f5559222fc62aab67616d00001e025e7cb9ed84348b98973c823fab67616d00001e029ce3f2af269f08d61ac2ab9e.jfif"
               alt=""
             />
             <p class="card-title">Made in Brazil!</p>
+            <div
+              class="w-12 h-12 opacity-0 self-center rounded-full flex justify-center bg-springGreen group-hover:opacity-100 hover:scale-110 cursor-pointer"
+            >
+              <svg class="fill-black w-4" viewBox="0 0 16 16">
+                <path
+                  d="M3 1.713a.7.7 0 0 1 1.05-.607l10.89 6.288a.7.7 0 0 1 0 1.212L4.05 14.894A.7.7 0 0 1 3 14.288V1.713z"
+                ></path>
+              </svg>
+            </div>
           </div>
-          <div class="card">
+          <div class="group card">
             <img
               src="assets/images/ab67616d00001e023b857ae39335650756e7146eab67616d00001e025e574a5387c5d9997514b698ab67616d00001e0262c6b448c479e79724b4bc31ab67616d00001e0278b2749882bd486cf81f23af.jfif"
               alt=""
@@ -233,17 +282,40 @@
             <p class="card-title">
               Se dividirem o brasil, eu fico do lado que toca forró.
             </p>
+            <div
+              class="w-12 h-12 opacity-0 self-center rounded-full flex justify-center bg-springGreen group-hover:opacity-100 hover:scale-110 cursor-pointer"
+            >
+              <svg class="fill-black w-4" viewBox="0 0 16 16">
+                <path
+                  d="M3 1.713a.7.7 0 0 1 1.05-.607l10.89 6.288a.7.7 0 0 1 0 1.212L4.05 14.894A.7.7 0 0 1 3 14.288V1.713z"
+                ></path>
+              </svg>
+            </div>
           </div>
-          <div class="card">
+          <div class="group card">
             <img
               src="assets/images/ab67616d00001e0215784f5212050cf2e67f1935ab67616d00001e026904726431559cb2a3fb6435ab67616d00001e02c9fec49c8930fb10e4756dfeab67616d00001e02d3ce97395ff522b0d70c1094.jfif"
               alt=""
             />
             <p class="card-title">Para deixar minha mente em silêncio.</p>
+            <div
+              class="w-12 h-12 opacity-0 self-center rounded-full flex justify-center bg-springGreen group-hover:opacity-100 hover:scale-110 cursor-pointer"
+            >
+              <svg class="fill-black w-4" viewBox="0 0 16 16">
+                <path
+                  d="M3 1.713a.7.7 0 0 1 1.05-.607l10.89 6.288a.7.7 0 0 1 0 1.212L4.05 14.894A.7.7 0 0 1 3 14.288V1.713z"
+                ></path>
+              </svg>
+            </div>
           </div>
         </div>
 
-        <h2 class="title">Jump in back</h2>
+        <div class="flex justify-between items-end">
+          <h2 class="title">Jump in back</h2>
+          <p class="text-xs text-zinc-400 cursor-pointer hover:text-white">
+            Show all
+          </p>
+        </div>
         <div class="flex-none flex overflow-x-auto gap-2 md:justify-between">
           <div class="card-stacked">
             <img
@@ -296,13 +368,21 @@
           </div>
         </div>
 
-        <h2 class="title">Made for João Marcos</h2>
+        <div class="flex justify-between items-end">
+          <h2 class="title">Made for João Marcos</h2>
+          <p class="text-xs text-zinc-400 cursor-pointer hover:text-white">
+            Show all
+          </p>
+        </div>
         <div class="flex-none flex overflow-x-auto gap-2 md:justify-between">
           <div class="card-stacked">
-            <img src="assets/images/5asd16as5d46a5s4d65as1.jfif" alt="" />
-            <p class="card-stacked-title">Descovery Weekly</p>
+            <img
+              src="assets/images/ab67706f00000002b0fe40a6e1692822f5a9d8f1.jpeg"
+              alt=""
+            />
+            <p class="card-stacked-title">All Out 2010s</p>
             <p class="card-stacked-description">
-              Your weekly mixed of fresh music. Enjoy news songs.
+              The biggest songs of the 2010s.
             </p>
           </div>
           <div class="card-stacked">
@@ -334,12 +414,278 @@
             </p>
           </div>
         </div>
+
+        <div class="flex justify-between items-end">
+          <h2 class="title">Focus</h2>
+          <p class="text-xs text-zinc-400 cursor-pointer hover:text-white">
+            Show all
+          </p>
+        </div>
+        <div class="flex-none flex overflow-x-auto gap-2 md:justify-between">
+          <div class="card-stacked">
+            <img
+              src="assets/images/ab67706f00000002ca5a7517156021292e5663a6.jfif"
+              alt=""
+            />
+            <p class="card-stacked-title">Peaceful Piano</p>
+            <p class="card-stacked-description">
+              Relax and indulge with beautiful piano pieces
+            </p>
+          </div>
+
+          <div class="card-stacked">
+            <img
+              src="assets/images/ab67706f000000025551996f500ba876bda73fa5.jfif"
+              alt=""
+            />
+            <p class="card-stacked-title">Deep Focus</p>
+            <p class="card-stacked-description">
+              Keep calm and focus with ambient and post-rock music.
+            </p>
+          </div>
+
+          <div class="card-stacked">
+            <img
+              src="assets/images/ab67706f00000002fe24d7084be472288cd6ee6c.jfif"
+              alt=""
+            />
+            <p class="card-stacked-title">Instrumental Study</p>
+            <p class="card-stacked-description">
+              Focus with soft study music in the background.
+            </p>
+          </div>
+
+          <div class="card-stacked">
+            <img
+              src="assets/images/ab67706f000000025ea54b91b073c2776b966e7b.jfif"
+              alt=""
+            />
+            <p class="card-stacked-title">Jazz Vibes</p>
+            <p class="card-stacked-description">
+              The original chill instrumental beats playlist.
+            </p>
+          </div>
+
+          <div class="card-stacked">
+            <img
+              src="assets/images/ab67706f00000002724554ed6bed6f051d9b0bfc.jfif"
+              alt=""
+            />
+            <p class="card-stacked-title">Focus Flow</p>
+            <p class="card-stacked-description">
+              Uptempo instrumental hip hop beats.
+            </p>
+          </div>
+        </div>
       </main>
       <!-- MAIN -->
 
       <!-- FOOTER -->
-      <footer class="bg-crow h-24 w-screen fixed bottom-0 left-0">
-        footer
+      <footer
+        class="bg-crow h-24 w-screen fixed bottom-0 left-0 grid grid-rows-2 md:flex"
+      >
+        <div
+          class="min-w-fit flex justify-between md:justify-start gap-2 md:p-5"
+        >
+          <div class="flex gap-4 items-center">
+            <img
+              class="h-full"
+              src="assets/images/ab67616d000048517cf048ff7e24adbdef5c99a2.jfif"
+              alt=""
+            />
+            <div>
+              <p class="text-[0.8rem]">A Cidade</p>
+              <p class="text-[0.7rem] text-zinc-400">Zimbra</p>
+            </div>
+          </div>
+          <div class="flex gap-4 px-5">
+            <svg
+              class="fill-zinc-500 hover:fill-white cursor-pointer w-5 md:hidden"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2 3.75C2 2.784 2.784 2 3.75 2h8.5c.966 0 1.75.784 1.75 1.75v6.5A1.75 1.75 0 0 1 12.25 12h-8.5A1.75 1.75 0 0 1 2 10.25v-6.5zm1.75-.25a.25.25 0 0 0-.25.25v6.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-6.5a.25.25 0 0 0-.25-.25h-8.5zM.25 15.25A.75.75 0 0 1 1 14.5h14a.75.75 0 0 1 0 1.5H1a.75.75 0 0 1-.75-.75z"
+              ></path>
+            </svg>
+
+            <svg class="fill-white w-5 md:hidden" viewBox="0 0 24 24">
+              <path
+                d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+              ></path>
+            </svg>
+
+            <svg
+              class="hidden fill-zinc-500 hover:fill-white cursor-pointer w-4 md:block"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M1.69 2A4.582 4.582 0 0 1 8 2.023 4.583 4.583 0 0 1 11.88.817h.002a4.618 4.618 0 0 1 3.782 3.65v.003a4.543 4.543 0 0 1-1.011 3.84L9.35 14.629a1.765 1.765 0 0 1-2.093.464 1.762 1.762 0 0 1-.605-.463L1.348 8.309A4.582 4.582 0 0 1 1.689 2zm3.158.252A3.082 3.082 0 0 0 2.49 7.337l.005.005L7.8 13.664a.264.264 0 0 0 .311.069.262.262 0 0 0 .09-.069l5.312-6.33a3.043 3.043 0 0 0 .68-2.573 3.118 3.118 0 0 0-2.551-2.463 3.079 3.079 0 0 0-2.612.816l-.007.007a1.501 1.501 0 0 1-2.045 0l-.009-.008a3.082 3.082 0 0 0-2.121-.861z"
+              ></path>
+            </svg>
+
+            <svg
+              class="hidden fill-zinc-500 hover:fill-white cursor-pointer w-4 md:block"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M1 3v9h14V3H1zm0-1h14a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"
+              ></path>
+              <path d="M10 8h4v3h-4z"></path>
+            </svg>
+          </div>
+        </div>
+
+        <!-- MOBILE ACTIONS LIBRARY -->
+        <div
+          class="border-t-zinc-800 border-t p-2 flex justify-around md:hidden"
+        >
+          <div class="flex flex-col items-center">
+            <svg class="fill-white w-6" viewBox="0 0 24 24">
+              <path
+                d="M13.5 1.515a3 3 0 0 0-3 0L3 5.845a2 2 0 0 0-1 1.732V21a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6h4v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V7.577a2 2 0 0 0-1-1.732l-7.5-4.33z"
+              ></path>
+            </svg>
+            <p class="action-title text-white">Home</p>
+          </div>
+
+          <div class="group flex flex-col items-center cursor-pointer">
+            <svg
+              class="fill-zinc-500 group-hover:fill-white w-6"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10.533 1.279c-5.18 0-9.407 4.14-9.407 9.279s4.226 9.279 9.407 9.279c2.234 0 4.29-.77 5.907-2.058l4.353 4.353a1 1 0 1 0 1.414-1.414l-4.344-4.344a9.157 9.157 0 0 0 2.077-5.816c0-5.14-4.226-9.28-9.407-9.28zm-7.407 9.279c0-4.006 3.302-7.28 7.407-7.28s7.407 3.274 7.407 7.28-3.302 7.279-7.407 7.279-7.407-3.273-7.407-7.28z"
+              ></path>
+            </svg>
+            <p class="action-title group-hover:text-white">Search</p>
+          </div>
+
+          <div class="group flex flex-col items-center cursor-pointer">
+            <svg
+              class="fill-zinc-500 group-hover:fill-white w-6"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M14.5 2.134a1 1 0 0 1 1 0l6 3.464a1 1 0 0 1 .5.866V21a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1V3a1 1 0 0 1 .5-.866zM16 4.732V20h4V7.041l-4-2.309zM3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zm6 0a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1z"
+              ></path>
+            </svg>
+            <p class="action-title group-hover:text-white">Your Library</p>
+          </div>
+        </div>
+
+        <div class="hidden md:grid grid-rows-3 w-full">
+          <div class="row-span-2 flex gap-6 justify-center items-center">
+            <svg
+              class="fill-zinc-500 hover:fill-white cursor-pointer w-4"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M13.151.922a.75.75 0 1 0-1.06 1.06L13.109 3H11.16a3.75 3.75 0 0 0-2.873 1.34l-6.173 7.356A2.25 2.25 0 0 1 .39 12.5H0V14h.391a3.75 3.75 0 0 0 2.873-1.34l6.173-7.356a2.25 2.25 0 0 1 1.724-.804h1.947l-1.017 1.018a.75.75 0 0 0 1.06 1.06L15.98 3.75 13.15.922zM.391 3.5H0V2h.391c1.109 0 2.16.49 2.873 1.34L4.89 5.277l-.979 1.167-1.796-2.14A2.25 2.25 0 0 0 .39 3.5z"
+              ></path>
+              <path
+                d="m7.5 10.723.98-1.167.957 1.14a2.25 2.25 0 0 0 1.724.804h1.947l-1.017-1.018a.75.75 0 1 1 1.06-1.06l2.829 2.828-2.829 2.828a.75.75 0 1 1-1.06-1.06L13.109 13H11.16a3.75 3.75 0 0 1-2.873-1.34l-.787-.938z"
+              ></path>
+            </svg>
+
+            <svg
+              class="fill-zinc-400 hover:fill-white cursor-pointer w-4"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.3 1a.7.7 0 0 1 .7.7v5.15l9.95-5.744a.7.7 0 0 1 1.05.606v12.575a.7.7 0 0 1-1.05.607L4 9.149V14.3a.7.7 0 0 1-.7.7H1.7a.7.7 0 0 1-.7-.7V1.7a.7.7 0 0 1 .7-.7h1.6z"
+              ></path>
+            </svg>
+
+            <div
+              class="w-8 h-8 rounded-full flex justify-center bg-white hover:scale-110 cursor-pointer"
+            >
+              <svg class="fill-black w-4" viewBox="0 0 16 16">
+                <path
+                  d="M3 1.713a.7.7 0 0 1 1.05-.607l10.89 6.288a.7.7 0 0 1 0 1.212L4.05 14.894A.7.7 0 0 1 3 14.288V1.713z"
+                ></path>
+              </svg>
+            </div>
+
+            <svg
+              class="fill-zinc-400 hover:fill-white cursor-pointer w-4"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12.7 1a.7.7 0 0 0-.7.7v5.15L2.05 1.107A.7.7 0 0 0 1 1.712v12.575a.7.7 0 0 0 1.05.607L12 9.149V14.3a.7.7 0 0 0 .7.7h1.6a.7.7 0 0 0 .7-.7V1.7a.7.7 0 0 0-.7-.7h-1.6z"
+              ></path>
+            </svg>
+
+            <svg
+              class="fill-zinc-400 hover:fill-white cursor-pointer w-4"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 4.75A3.75 3.75 0 0 1 3.75 1h8.5A3.75 3.75 0 0 1 16 4.75v5a3.75 3.75 0 0 1-3.75 3.75H9.81l1.018 1.018a.75.75 0 1 1-1.06 1.06L6.939 12.75l2.829-2.828a.75.75 0 1 1 1.06 1.06L9.811 12h2.439a2.25 2.25 0 0 0 2.25-2.25v-5a2.25 2.25 0 0 0-2.25-2.25h-8.5A2.25 2.25 0 0 0 1.5 4.75v5A2.25 2.25 0 0 0 3.75 12H5v1.5H3.75A3.75 3.75 0 0 1 0 9.75v-5z"
+              ></path>
+            </svg>
+          </div>
+
+          <div class="flex gap-2 items-center justify-center mb-5">
+            <p class="text-zinc-500 text-xs">0:00</p>
+            <div class="w-6/12 h-1 bg-zinc-500 rounded-md"></div>
+            <p class="text-zinc-500 text-xs">3:17</p>
+          </div>
+        </div>
+
+        <div
+          class="min-w-fit hidden md:flex gap-4 justify-end items-center pr-7"
+        >
+          <svg
+            class="shrink-0 hidden md:block fill-zinc-500 w-4 hover:fill-white cursor-pointer"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.426 2.574a2.831 2.831 0 0 0-4.797 1.55l3.247 3.247a2.831 2.831 0 0 0 1.55-4.797zM10.5 8.118l-2.619-2.62A63303.13 63303.13 0 0 0 4.74 9.075L2.065 12.12a1.287 1.287 0 0 0 1.816 1.816l3.06-2.688 3.56-3.129zM7.12 4.094a4.331 4.331 0 1 1 4.786 4.786l-3.974 3.493-3.06 2.689a2.787 2.787 0 0 1-3.933-3.933l2.676-3.045 3.505-3.99z"
+            ></path>
+          </svg>
+
+          <svg
+            class="shrink-0 hidden md:block fill-zinc-500 w-4 hover:fill-white cursor-pointer"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M15 15H1v-1.5h14V15zm0-4.5H1V9h14v1.5zm-14-7A2.5 2.5 0 0 1 3.5 1h9a2.5 2.5 0 0 1 0 5h-9A2.5 2.5 0 0 1 1 3.5zm2.5-1a1 1 0 0 0 0 2h9a1 1 0 1 0 0-2h-9z"
+            ></path>
+          </svg>
+
+          <svg
+            class="shrink-0 hidden md:block fill-zinc-500 w-4 hover:fill-white cursor-pointer"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2 3.75C2 2.784 2.784 2 3.75 2h8.5c.966 0 1.75.784 1.75 1.75v6.5A1.75 1.75 0 0 1 12.25 12h-8.5A1.75 1.75 0 0 1 2 10.25v-6.5zm1.75-.25a.25.25 0 0 0-.25.25v6.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-6.5a.25.25 0 0 0-.25-.25h-8.5zM.25 15.25A.75.75 0 0 1 1 14.5h14a.75.75 0 0 1 0 1.5H1a.75.75 0 0 1-.75-.75z"
+            ></path>
+          </svg>
+
+          <div class="group flex gap-2 justify-self-end">
+            <svg
+              class="shrink-0 hidden md:block fill-zinc-500 w-4 group-hover:fill-white"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9.741.85a.75.75 0 0 1 .375.65v13a.75.75 0 0 1-1.125.65l-6.925-4a3.642 3.642 0 0 1-1.33-4.967 3.639 3.639 0 0 1 1.33-1.332l6.925-4a.75.75 0 0 1 .75 0zm-6.924 5.3a2.139 2.139 0 0 0 0 3.7l5.8 3.35V2.8l-5.8 3.35zm8.683 4.29V5.56a2.75 2.75 0 0 1 0 4.88z"
+              ></path>
+              <path
+                d="M11.5 13.614a5.752 5.752 0 0 0 0-11.228v1.55a4.252 4.252 0 0 1 0 8.127v1.55z"
+              ></path>
+            </svg>
+            <div class="range"></div>
+          </div>
+
+          <svg
+            class="shrink-0 hidden md:block fill-zinc-500 w-4 hover:fill-white cursor-pointer"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M6.53 9.47a.75.75 0 0 1 0 1.06l-2.72 2.72h1.018a.75.75 0 0 1 0 1.5H1.25v-3.579a.75.75 0 0 1 1.5 0v1.018l2.72-2.72a.75.75 0 0 1 1.06 0zm2.94-2.94a.75.75 0 0 1 0-1.06l2.72-2.72h-1.018a.75.75 0 1 1 0-1.5h3.578v3.579a.75.75 0 0 1-1.5 0V3.81l-2.72 2.72a.75.75 0 0 1-1.06 0z"
+            ></path>
+          </svg>
+        </div>
       </footer>
       <!-- FOOTER -->
     </div>
